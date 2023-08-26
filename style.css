@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background-color:#333333;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(225, 225, 225, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal {
+    width: 145px;
+}
+
+form input.op{
+    color: #33ffd8;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 390px){
+
+    .container{
+        width: 100%;
+        height: 768px;
+    }
+    .calculator{
+        margin: 0;
+        padding: 0;
+        background-color: #333333;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 7px rgba(29, 29, 29, 0.774);
+    }
+    .calculator form input{
+        border: 0;
+        outline: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        box-shadow: -5px -5px 10px rgba(8, 8, 8, 0.1),5px 5px 10px rgba(0, 0, 0, 0.2);
+        background: transparent;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    form input.bt{
+        background-color: white;
+        color: #3a4452;
+    }
+    form .display input{
+        box-shadow: none;
+    }
+    form input.equal {
+        width: 145px;
+    }
+    form input.op{
+        color: #33ffd8;
+    }
+    .container{
+        background-color: #838383;
+    }
+    footer{
+        font-size: .7rem;
+        /* position: relative;
+        top: -100px;
+        margin-bottom: 0;
+        padding-bottom: 0; */
+    }
+    .header{
+        font-size: .8rem;
+    }
+    form input.org{
+        background-color: rgb(255, 123, 0);
+    }
+    .header span{
+        color: rgb(255, 166, 0);
+    }
+}
